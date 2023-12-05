@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 02</title>
+</head>
+
+<body>
+    <script>
+        class Cylinder {
+            constructor(height, radius) {
+                this.height = height;
+                this.radius = radius;
+            }
+
+            getVolume() {
+                return Math.PI * this.radius ** 2 * this.height;
+            }
+        }
+
+        let cylinder1 = new Cylinder(10, 3); 
+        let cylinder2 = new Cylinder(5, 5); 
+
+        console.log('Volume of cylinder 1:', cylinder1.getVolume()); 
+        console.log('Volume of cylinder 2:', cylinder2.getVolume()); 
+    </script>
+</body>
+
+</html>
